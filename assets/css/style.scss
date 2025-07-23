@@ -1,0 +1,57 @@
+
+/* --- 首页文章列表样式 -- */
+.post-list .post-item {
+  margin-bottom: 2.5em;
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid #eee;
+}
+
+.post-list .post-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-list .post-title a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.post-list .post-title a:hover {
+  color: #007bff;
+}
+
+.post-list .post-meta {
+  color: #888;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+.post-list .post-meta a {
+  color: #888;
+  text-decoration: none;
+}
+
+.post-list .post-meta a:hover {
+  text-decoration: underline;
+}
+
+.post-list .post-excerpt {
+  margin-top: 1em;
+  line-height: 1.6;
+}
+
+.post-list .read-more {
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* --- 文章页标题大小调整 -- */
+.post-header .post-title {
+    font-size: 2.5em; /* 将标题大小从默认值调整为您希望的大小 */
+    margin-bottom: 0.5em;
+}
