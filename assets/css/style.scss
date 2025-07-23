@@ -1,57 +1,12 @@
-
-/* --- 首页文章列表样式 -- */
-.post-list .post-item {
-  margin-bottom: 2.5em;
-  padding-bottom: 2.5em;
-  border-bottom: 1px solid #eee;
+/* --- 页面主要内容区域宽度约束 (提升阅读体验) -- */
+.main-content-wrap {
+    max-width: 800px; /* 这是最佳阅读宽度，您可以根据喜好调整，如900px或760px */
+    margin: 0 auto;   /* 关键：让内容区域在页面中水平居中 */
+    padding: 2em;     /* 给内容区域增加一些内边距，让文字不贴边 */
 }
 
-.post-list .post-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.post-list .post-title a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.2s ease-in-out;
-}
-
-.post-list .post-title a:hover {
-  color: #007bff;
-}
-
-.post-list .post-meta {
-  color: #888;
-  font-size: 0.9em;
-  margin-top: 0.5em;
-}
-
-.post-list .post-meta a {
-  color: #888;
-  text-decoration: none;
-}
-
-.post-list .post-meta a:hover {
-  text-decoration: underline;
-}
-
-.post-list .post-excerpt {
-  margin-top: 1em;
-  line-height: 1.6;
-}
-
-.post-list .read-more {
-  display: inline-block;
-  margin-top: 1em;
-  text-decoration: none;
-  font-weight: bold;
-  color: #007bff;
-}
-
-/* --- 文章页标题大小调整 -- */
-.post-header .post-title {
-    font-size: 2.5em; /* 将标题大小从默认值调整为您希望的大小 */
-    margin-bottom: 0.5em;
+/* --- 文章页面内容区域的额外样式 -- */
+.post-content {
+    line-height: 1.7; /* 增加行高，让长篇文章更易读 */
+    font-size: 1.1em;   /* 稍微增大正文字体大小 */
 }
