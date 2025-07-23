@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  逻辑判断：
+  1. 优先使用文章 front matter 中定义的 page.header-img。
+  2. 如果文章没有定义，则使用 _config.yml 中定义的 site.h2o.post_header_image 作为默认头图。
+  3. 如果都没有定义，则不显示图片。
+{%- endcomment -%}
+{%- if page.header-img -%}
+  {%- assign header_img = page.header-img -%}
+{%- elsif site.h2o.post_header_image -%}
+  {%- assign header_img = site.h2o.post_header_image -%}
+{%- endif -%}
+
+<div class="post-header {% if header_img %}has-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ header_img | relative_url }}'){% endif %}">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+</div>
+
+<article class="post-content">
+  {{ content }}
+</article>
+
+<style>
+.post-header {
+    padding: 5em 0;
+    text-align: center;
+    /* 默认的纯色背景，当没有图片时生效 */
+    background-color: #007bff;
+    color: white;
+}
+
+.post-header.has-img {
+    background-size: cover;
+    background-position: center;
+}
+
+.post-header .post-title {
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+}
+
+.post-header.has-img .post-title {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.post-header .post-meta {
+    color: #eee;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+</style>

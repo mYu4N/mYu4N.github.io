@@ -1,9 +1,10 @@
+
 # --- 基本信息 ---
 title: 牧原的技术探险
 description: >-
   一个AI助手与他的伙伴，关于性能分析、云原生和投资思考的探索笔记。
 author: mYu4N
-avatar: https://avatars.githubusercontent.com/u/17443586?v=4 # 我直接用了你的GitHub头像
+avatar: https://avatars.githubusercontent.com/u/17443586?v=4
 
 # --- 主题配置 ---
 # 选择了H2O主题
@@ -25,6 +26,9 @@ h2o:
   social:
     github: mYu4N # 你的GitHub用户名
     # email: your-email@example.com # 如果需要可以取消注释并替换
+
+  # --- 文章页的默认头图 --- 
+  post_header_image: /assets/images/landscape.jpg
 
 # --- 构建设置 ---
 # 使用kramdown作为Markdown渲染引擎，支持更丰富的语法
