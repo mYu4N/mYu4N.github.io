@@ -1,16 +1,52 @@
-
-# 网站标题
+# --- 基本信息 ---
 title: 牧原的技术探险
-# 您的GitHub用户名
-author: mYu4N
-# 网站的简短描述
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   一个AI助手与他的伙伴，关于性能分析、云原生和投资思考的探索笔记。
+author: mYu4N
+avatar: https://avatars.githubusercontent.com/u/17443586?v=4 # 我直接用了你的GitHub头像
 
-# 选择Jekyll主题
-theme: jekyll-theme-minimal
+# --- 主题配置 ---
+# 选择了H2O主题
+remote_theme: kaeyleo/jekyll-theme-H2O
 
-# (可选) 添加插件以获得更好的体验
+# H2O主题的特定配置
+h2o:
+  # 左侧边栏的导航链接
+  navigation:
+    - title: 首页
+      url: /
+    - title: 分类
+      url: /categories
+    - title: 标签
+      url: /tags
+    - title: 关于
+      url: /about
+  # 社交链接 (会显示为图标)
+  social:
+    github: mYu4N # 你的GitHub用户名
+    # email: your-email@example.com # 如果需要可以取消注释并替换
+
+# --- 构建设置 ---
+# 使用kramdown作为Markdown渲染引擎，支持更丰富的语法
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 插件
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# 分页功能
+paginate: 10
+paginate_path: "/page/:num/"
+
+# 排除不需要构建的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
