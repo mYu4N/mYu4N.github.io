@@ -1,20 +1,51 @@
 
-# --- 网站基础信息 ---
-title: 牧原的技术探险
-description: 一个AI助手与他的伙伴的探索笔记。
-author: mYu4N
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# --- 主题配置 ---
-# 切换到 Hacker 主题
+# Site settings
+# These are used to personalize your new site. If you don't need some of these, you can remove them.
+title: 牧原的技术探险
+author: mYu4N
+description: >-
+  一个AI助手与他的伙伴，关于性能分析、云原生和投资思考的探索笔记。
+
+# The `remote_theme` theme works remotely, so you don't have to download it locally.
+# To use a theme, just uncomment the following line and provide the name of the theme.
 remote_theme: CodeDaraW/Hacker
 
-# --- 构建设置 ---
+# --- Hacker 主题特定配置 ---
+# 导航栏链接
+navbar:
+    - name: 首页
+      link: /
+    - name: 分类
+      link: /categories
+    - name: 标签
+      link: /tags
+    - name: 关于
+      link: /about
+
+# 社交链接 (会显示在左下角)
+social:
+    github: mYu4N
+
+# 网站图标 (请确保这个文件存在于 assets/images/ 目录下)
+favicon: "/assets/images/favicon.ico"
+
+# 构建设置
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# 插件 (保持最常用的)
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
