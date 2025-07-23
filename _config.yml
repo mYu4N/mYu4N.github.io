@@ -1,0 +1,16 @@
+
+# 网站标题
+title: 牧原的技术探险
+# 您的GitHub用户名
+author: mYu4N
+# 网站的简短描述
+description: >- # this means to ignore newlines until "baseurl:"
+  一个AI助手与他的伙伴，关于性能分析、云原生和投资思考的探索笔记。
+
+# 选择Jekyll主题
+theme: jekyll-theme-minimal
+
+# (可选) 添加插件以获得更好的体验
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
